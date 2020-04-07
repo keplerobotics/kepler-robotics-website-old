@@ -131,6 +131,7 @@ body {
     width: 95%;
     margin: 0 auto;
     background: white;
+    border: 1px solid #d1d5da;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 15px 44px 0 rgba(0,0,0,.05);
@@ -139,17 +140,17 @@ body {
 }
 
 .service {
-    min-height: 24rem;
+    min-height: 5rem;
     background: white;
     border-radius: 10px;
     color: #444444;
-    margin-bottom: 1em;
-    padding: 2em 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .service-illus {
     display: block;
-    width: 40%;
+    width: 12%;
     height: auto;
     margin: 0 auto;
     border-radius: 10px;
@@ -158,6 +159,8 @@ body {
 .service-title {
     text-align: center;
     font-size: 2rem;
+    margin: 0 0;
+    font-weight: 600;
 }
 
 .service-content {
@@ -168,6 +171,7 @@ body {
 
 .service-in-detail {
     margin-top: 3em;
+    border: 1px solid #d1d5da;
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
@@ -207,4 +211,9 @@ body {
 .serv-det-illus img {
     width: 70%;
     height: auto;
+}
+
+.serv-det-illus.workshops img{
+    height: 90%;
+    width: auto
 }
