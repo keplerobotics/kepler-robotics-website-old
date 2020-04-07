@@ -177,6 +177,10 @@ body {
     box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
 }
 
+.service-in-detail .section-title {
+    font-size: 2.5rem;
+}
+
 .serv-det-desc {
     height: 100vh;
     background: white;
@@ -206,11 +210,21 @@ body {
 .serv-det-illus {
     height: 100vh;
     overflow: hidden;
+    background: #d1d5da;
+}
+
+.service-in-detail .serv-det-illus:nth-of-type(2n) {
+    border-radius: 0 10px 10px 0;
+}
+
+.service-in-detail .serv-det-illus:nth-of-type(2n + 1) {
+    border-radius: 10px 0 0 10px;
 }
 
 .serv-det-illus img {
     width: 70%;
     height: auto;
+    border-radius: 10px;
 }
 
 .serv-det-illus.workshops img{
