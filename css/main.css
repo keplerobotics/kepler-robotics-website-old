@@ -1,11 +1,14 @@
-body, html {
+body {
     margin:  0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 3em;
+    background: #f7f7f7;
 }
 
+
 .hero {
-    #f7f7f7;
+    background: #f7f7f7;
 }
 
 .hero-company-detail {
@@ -38,13 +41,18 @@ body, html {
     position: relative;
 /*     box-sizing: content-box !important;; */
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
+    border-radius: 8px;
     background: blue;
+    background: linear-gradient(to right, #ff512f, #dd2476);
     color: white;
+/*     font-weight: 600; */
+    font-size: 1.3rem;
     text-decoration: none;
     height: 2.5rem;
-/*     z-index: 0; */
-    margin: 0 3em;
+    line-height: 0.9;
+    z-index: 0;
+    margin: 0 1em;
 }
 
 .btn-pri:focus, .btn-pri:active, .btn-pri:visited {
@@ -52,7 +60,11 @@ body, html {
     color: white;
 }
 
-.btn-pri::after {
+.contact-us-btn {
+    background: linear-gradient(to right, #02aab0, #00cdac);
+}
+
+/* .btn-pri::after {
     position: absolute;
     top: 0;
     right: -1.25rem;
@@ -61,7 +73,7 @@ body, html {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .btn-pri::before {
@@ -74,4 +86,49 @@ body, html {
     width: 2.5rem;
     border-radius: 50%;
     z-index: -1;
+} */
+
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.services {
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 15px 44px 0 rgba(0,0,0,.05);
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+.service {
+    min-height: 24rem;
+    background: white;
+    border-radius: 10px;
+    color: #444444;
+    margin-bottom: 1em;
+    padding: 2em 1em;
+}
+
+.service-illus {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.service-content {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 1.5em 0 1.5em;
 }
