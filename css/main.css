@@ -214,7 +214,6 @@ h1 {
 }
 
 .sub-title {
-    width: 80%;
     font-size: 2rem
 }
 
@@ -299,7 +298,7 @@ h1 {
 #about {
     margin-bottom: 6em;
     margin: 0 auto;
-    max-width: 95%; 
+    max-width: 95%;
 }
 
 #about .service-in-detail {
@@ -478,13 +477,13 @@ footer .tagline {
         height: 50vh;
         border-radius: 10px 10px 0 0;
     }
-    
+
     .serv-det-illus img {
         height: 100%;
         width: auto;
         border-radius: 10px 10px 0 0;
     }
-    
+
     .serv-det-desc {
         height: auto;
         padding: 3em;
@@ -510,10 +509,9 @@ footer .tagline {
 /* maximum width 410px */
 @media (max-width: 410px) {
     .sub-title {
-        width: 100%;
         font-size: 1.5rem;
     }
-    
+
     .hero .btn-pri {
         width: 7.5rem;
         font-size: 1.3rem;
