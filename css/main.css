@@ -10,6 +10,21 @@ body {
     overflow-x: hidden;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.row {
+    width: 100%;
+}
+
 /* navigation bar starts here */
 nav {
     position: absolute;
@@ -21,6 +36,8 @@ nav {
     background: transparent;
     z-index: 10;
     overflow: hidden;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 nav ul {
@@ -37,10 +54,19 @@ nav li a {
     color: inherit;
 }
 
-.navbar-logo {
+/* .navbar-logo {
     height: 70%;
     position: relative;
     top: 0.7rem;
+} */
+
+.navbar-logo {
+    display: inline-block;
+    background: center / contain no-repeat url('../img/logokepler_logo_white.png');
+    height: 70%;
+    width: 9rem;
+    top: 0.7rem;
+    position: relative;
 }
 
 .desktop-navbar, .mobile-navbar {
@@ -56,10 +82,10 @@ nav li a {
 }
 
 .desktop-navbar li {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     display: inline-block;
-    width: 12rem;
+    width: 7rem;
     height: 5rem;
 }
 
@@ -134,6 +160,10 @@ nav li a {
     overflow: hidden;
 }
 
+h1 {
+    margin: 0;
+}
+
 .hero-company-detail {
     height: 100vh;
     color: white;
@@ -158,13 +188,13 @@ nav li a {
 .bg-pat {
     position: absolute;
     top: 10%;
-    left: 25%;
+    left: 15%;
     height: 150vh;
-    width: 120%;
+    width: 200vw;
     border-radius:120px;
     background: linear-gradient(180deg, #0A1792 0%, #0C30EF 100%);
     transform-origin: left top;
-    transform: rotate(24deg);
+    transform: rotate(22deg);
 }
 
 #particles {
@@ -185,10 +215,16 @@ nav li a {
 
 .sub-title {
     width: 80%;
+    font-size: 2rem
+}
+
+#typed {
+    font-weight: 700;
 }
 
 .button-container {
     text-align: left;
+    margin-top: 1.5em;
 }
 
 .btn-pri {
@@ -247,14 +283,23 @@ nav li a {
 } */
 
 .section-title {
+    position: relative;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 900;
     margin: 0.5em 0;
 }
 
+.jump-pointer {
+    position: absolute;
+    top: -12rem;
+    left: 50%;
+}
+
 #about {
     margin-bottom: 6em;
+    margin: 0 auto;
+    max-width: 95%; 
 }
 
 #about .service-in-detail {
@@ -442,6 +487,21 @@ footer .tagline {
     }
 }
 
+/* maximum width 380px */
+@media (max-width: 380px) {
+    .sub-title {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .hero .btn-pri {
+        width: 7.5rem;
+        font-size: 1.3rem;
+        padding: 0.7rem 0 1rem 0;
+        text-align: center;
+    }
+}
+
 
 /* AOS animation */
 [data-aos="navbar-white"] {
@@ -460,6 +520,10 @@ footer .tagline {
 
 [data-aos="navbar-white"].aos-animate li {
         color: black;
+}
+
+[data-aos="navbar-white"].aos-animate .navbar-logo {
+    background: center / contain no-repeat url('../img/kepler_logo.png');
 }
 
 @media (max-width: 750px) {

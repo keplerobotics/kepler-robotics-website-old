@@ -15,16 +15,21 @@
 <body>
     <!-- navbar section starts -->
     <nav data-aos="navbar-white" data-aos-anchor="#about" data-aos-anchor-placement="top-center">
-        <img class="navbar-logo" src="./img/ClimateNetDomeWhite2smaller.png" alt="ClimateNet.org Logo">
+        <!-- <img class="navbar-logo" src="./img/logokepler_logo_white.png" alt="Kepler Robotics Logo"> -->
+        <div class="navbar-logo">
+            <span class="sr-only">Kepler Robotics Logo</span>
+        </div>
         <ul class="desktop-navbar">
             <li><a href="#">Home</a></li>
-            <li><a href="#plan-resources">About</a></li>
-            <li><a href="#follow-us">What We Do</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#activity">What We Do</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
         <ul class="mobile-navbar hidden">
             <li><a href="#">Home</a></li>
-            <li><a href="#plan-resources">About</a></li>
-            <li><a href="#follow-us">What We Do</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#activity">What We Do</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             <li class="mobile close-mobile-navbar"><i class="ion-md-close"></i></li>
         </ul>
         <i class="navbar-mobile-button ion-md-menu"></i>
@@ -34,9 +39,9 @@
         <div class="hero">
             <div class="bg-pat"></div>
             <div id="particles"></div>
-            <img class="hero-hand-img" src="./img/hand_crop.png" alt="robotic hand reaching out">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6 d-flex align-items-center hero-company-detail order-1">
+            <!-- <img class="hero-hand-img" src="./img/hand_crop.png" alt="robotic hand reaching out"> -->
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-lg-8 d-flex align-items-center hero-company-detail order-1">
                     <div class="title-content">
                         <h1 class="company-logo">
                             <p id="company-logo-1">
@@ -46,21 +51,24 @@
                                 Robotics
                             </p>
                         </h1>
-                        <p class="sub-title">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Nostrum nisi nobis dicta dignissimos in necessitatbus
-                        </p>
+                        <div id="typed-strings">
+                            <p>Robotics.</p>
+                            <p>Stem Education.</p>
+                            <p>Industrial Training.</p>
+                            <p>3D Printing.</p>
+                        </div>
+                        <div class="sub-title">
+                            We do <span id="typed"></span>
+                        </div>
                         <div class="button-container">
-                            <a href="#!" class="btn-pri">
+                            <a href="#activity" class="btn-pri">
                                 Learn more
                             </a>
-                            <a href="#!" class="btn-pri contact-us-btn">
+                            <a href="#contact" class="btn-pri contact-us-btn">
                                 Contact Us
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 hero-illus order-0">
                 </div>
             </div>
         </div>
@@ -68,6 +76,7 @@
     <main>
         <h2 class="section-title" data-aos="fade-up">
             About Us
+            <div id="about-section" class="sr-only jump-pointer"></div>
         </h2>
         <section id="about" class="row d-flex justify-content-center">
             <div class="service-in-detail col-12 col-md-8 col-lg-9">
@@ -81,6 +90,7 @@
         </section>
         <h2 class="section-title" data-aos="fade-up">
             What We Do
+            <div id="activity" class="sr-only jump-pointer"></div>
         </h2>
         <!-- <section class="services row no-gutters">
             <div class="service col-12 col-sm-6 col-md-6 col-lg-3">
@@ -117,8 +127,7 @@
                     </div>
                 </div>
                 <div class="serv-det-illus col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="./img/robotics.png" alt="Man repairing a robot" data-aos="fade-up"
-                     data-aos-anchor-placement="top-bottom">
+                    <img src="./img/robotics.png" alt="Man repairing a robot" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 </div>
             </div>
             <div class="service-in-detail row no-gutters">
@@ -154,14 +163,12 @@
                     </div>
                 </div>
                 <div class="serv-det-illus workshops col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="./img/workshops.png" alt="man teaching" data-aos="fade-up"
-                     data-aos-anchor-placement="top-bottom">
+                    <img src="./img/workshops.png" alt="man teaching" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 </div>
             </div>
             <div class="service-in-detail row no-gutters">
                 <div class="serv-det-illus col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="./img/makespace.png" alt="flow chart of makerspace" data-aos="fade-up"
-                     data-aos-anchor-placement="top-bottom">
+                    <img src="./img/makespace.png" alt="flow chart of makerspace" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 </div>
                 <div class="col-12 col-md-6 serv-det-desc d-flex align-items-center">
                     <div class="serv-det">
@@ -192,14 +199,16 @@
                     </div>
                 </div>
                 <div class="serv-det-illus col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="./img/3d_printer.png" alt="Image of a 3D printer" data-aos="fade-up"
-                     data-aos-anchor-placement="top-bottom">
+                    <img src="./img/3d_printer.png" alt="Image of a 3D printer" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <h2 id="contact" class="section-title" data-aos="fade-up">Contact Us</h2>
+        <h2 class="section-title" data-aos="fade-up">
+            Contact Us
+            <div id="contact" class="jump-pointer sr-only"></div>
+        </h2>
         <p class="tagline">We'd <span class="hearts">&#10084;</span> to hear from you !</p>
         <section class="contacts-list row">
             <div class="col-12 col-md-4">
@@ -233,6 +242,7 @@
     <script src="js/lib/fittext.js"></script>
     <link rel="stylesheet" href="./css/lib/aos.css">
     <script src="js/lib/aos.js"></script>
+    <script src="./js/lib/typed.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
