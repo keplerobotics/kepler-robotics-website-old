@@ -28,7 +28,9 @@ for (var i = 0; i < mobileNavbarList.length; ++i) {
     });
 }
 
-AOS.init();
+AOS.init({
+    disable: window.innerWidth < 900
+});
 
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
