@@ -23,6 +23,7 @@ body {
 
 .row {
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* navigation bar starts here */
