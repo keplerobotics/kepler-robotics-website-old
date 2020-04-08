@@ -2,8 +2,6 @@ body {
     margin:  0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 3em;
-/*     background: #f7f7f7; */
     width: 100%;
     overflow-x: hidden;
 }
@@ -230,4 +228,57 @@ body {
 .serv-det-illus.workshops img{
     height: 90%;
     width: auto
+}
+
+footer {
+    background: #242424;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    margin-top: 3em;
+}
+
+footer .tagline {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hearts {
+    color: red;
+}
+
+.contacts-list {
+
+}
+
+.contact {
+/*     background: linear-gradient(to right, #ff512f, #dd2476); */
+    width: 90%;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.contact p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact p.name {
+    font-weight: 600;
+}
+
+.contact p.email {
+    text-decoration: underline;
+}
+
+.copyright hr {
+    width: 50%;
+    border: 1px solid #787c7d;
+    margin-bottom: 1em;
+}
+
+.copyright {
+    margin-top: 2em;
+    text-align: center;
 }
