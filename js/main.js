@@ -28,3 +28,5 @@ for (var i = 0; i < mobileNavbarList.length; ++i) {
         mobileNavbar.classList.add('hidden');
     });
 }
+
+AOS.init();

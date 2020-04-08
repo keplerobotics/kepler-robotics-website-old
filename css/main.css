@@ -12,7 +12,7 @@ body {
 
 /* navigation bar starts here */
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,6 +29,7 @@ nav ul {
 
 nav li {
     color: #fefefe;
+    text-transform: uppercase;
 }
 
 nav li a {
@@ -249,6 +250,22 @@ nav li a {
     text-align: center;
     font-size: 3.5rem;
     font-weight: 900;
+    margin: 0.5em 0;
+}
+
+#about {
+    margin-bottom: 6em;
+}
+
+#about .service-in-detail {
+    padding: 1em 3em;
+    margin-top: 0;
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 .services {
@@ -422,5 +439,35 @@ footer .tagline {
 
     .navbar-mobile-button.ion-md-menu {
         display: block;
+    }
+}
+
+
+/* AOS animation */
+[data-aos="navbar-white"] {
+  background: transparent;
+  color: white;
+  position: absolute;
+  transition-property: background, color;
+}
+
+
+[data-aos="navbar-white"].aos-animate {
+    background: white;
+    position: fixed;
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+[data-aos="navbar-white"].aos-animate li {
+        color: black;
+}
+
+@media (max-width: 750px) {
+    [data-aos="navbar-white"].aos-animate li {
+        color: white;
+    }
+
+    [data-aos="navbar-white"].aos-animate .ion-md-menu {
+        color: black;
     }
 }
