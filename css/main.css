@@ -1,4 +1,5 @@
 * {
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -42,6 +43,7 @@ nav {
 }
 
 nav ul {
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -99,6 +101,7 @@ nav li a {
 .mobile-navbar {
     display: none;
     position: fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0A1792), to(#0C30EF));
     background: linear-gradient(180deg, #0A1792 0%, #0C30EF 100%);
     right: 0;
     top: 0;
@@ -193,9 +196,12 @@ h1 {
     height: 150vh;
     width: 200vw;
     border-radius:120px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0A1792), to(#0C30EF));
     background: linear-gradient(180deg, #0A1792 0%, #0C30EF 100%);
-    transform-origin: left top;
-    transform: rotate(22deg);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
 }
 
 #particles {
@@ -233,6 +239,7 @@ h1 {
     padding: 0.5em 1.5em;
     border-radius: 8px;
     background: blue;
+    background: -webkit-gradient(linear, left top, right top, from(#ff512f), to(#dd2476));
     background: linear-gradient(to right, #ff512f, #dd2476);
     color: white;
     font-size: 1.3rem;
@@ -244,7 +251,8 @@ h1 {
 }
 
 .btn-pri:hover {
-    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
     position: relative;
     box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
 }
@@ -255,6 +263,7 @@ h1 {
 }
 
 .contact-us-btn {
+    background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
     background: linear-gradient(to right, #02aab0, #00cdac);
 }
 
@@ -357,6 +366,7 @@ h1 {
 
 .service-in-detail {
     margin-top: 3em;
+    padding: 0.5em 0 2em 0;
     border: 1px solid #d1d5da;
     border-radius: 10px;
     position: relative;
@@ -368,9 +378,9 @@ h1 {
 }
 
 .serv-det-desc {
-    height: 100vh;
     background: white;
     border-radius: 10px;
+    max-height: 100vh;
 }
 
 .serv-det {
@@ -394,9 +404,9 @@ h1 {
 }
 
 .serv-det-illus {
-    height: 100vh;
     overflow: hidden;
-    background: #d1d5da;
+/*     background: #d1d5da; */
+    max-height: 100vh;
 }
 
 .service-in-detail .serv-det-illus.order-md-1 {
@@ -433,10 +443,6 @@ footer .tagline {
 
 .hearts {
     color: red;
-}
-
-.contacts-list {
-
 }
 
 .contact {
@@ -527,6 +533,7 @@ footer .tagline {
   background: transparent;
   color: white;
   position: absolute;
+  -webkit-transition-property: background, color;
   transition-property: background, color;
 }
 
