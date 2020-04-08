@@ -399,11 +399,11 @@ h1 {
     background: #d1d5da;
 }
 
-.service-in-detail .serv-det-illus:nth-of-type(2n) {
+.service-in-detail .serv-det-illus.order-md-1 {
     border-radius: 0 10px 10px 0;
 }
 
-.service-in-detail .serv-det-illus:nth-of-type(2n + 1) {
+.service-in-detail .serv-det-illus.order-md-0 {
     border-radius: 10px 0 0 10px;
 }
 
@@ -471,6 +471,26 @@ footer .tagline {
     text-align: center;
 }
 
+/* maximum width 768px */
+@media (max-width: 768px) {
+    .service-in-detail .serv-det-illus.order-md-1,
+    .service-in-detail .serv-det-illus.order-md-0{
+        height: 50vh;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .serv-det-illus img {
+        height: 100%;
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .serv-det-desc {
+        height: auto;
+        padding: 3em;
+    }
+}
+
 
 /* maximum width 750px */
 @media (max-width: 750px) {
@@ -487,8 +507,8 @@ footer .tagline {
     }
 }
 
-/* maximum width 380px */
-@media (max-width: 380px) {
+/* maximum width 410px */
+@media (max-width: 410px) {
     .sub-title {
         width: 100%;
         font-size: 1.5rem;
