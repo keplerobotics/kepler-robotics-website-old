@@ -1,0 +1,390 @@
+* {
+    transition: all 0.3s;
+}
+
+body {
+    margin:  0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.btn-pri {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border-radius: 6px;
+    background: blue;
+    background: -webkit-gradient(linear, left top, right top, from(#ff512f), to(#dd2476));
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    height: 2.8rem;
+    line-height: 1;
+    z-index: 0;
+    margin-right: 1em;
+}
+
+.btn-pri:hover {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    position: relative;
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+.btn-pri:focus, .btn-pri:active, .btn-pri:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* navigation bar starts here */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: rgba(0, 0, 0, 0.6);
+    /*transparent;*/
+    background: transparent;
+    z-index: 10;
+    overflow: hidden;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+nav ul {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+nav li {
+    color: #fefefe;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .navbar-logo {
+    height: 70%;
+    position: relative;
+    top: 0.7rem;
+} */
+
+.navbar-logo {
+    display: inline-block;
+    background: center / contain no-repeat url('../img/logokepler_logo_white.png');
+    height: 70%;
+    width: 9rem;
+    top: 0.7rem;
+    position: relative;
+}
+
+.desktop-navbar, .mobile-navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop-navbar {
+    float: right;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.desktop-navbar li {
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 7rem;
+    height: 5rem;
+}
+
+.desktop-navbar li:hover {
+/*     background-color: #23ce6b; */
+    color: #0b22bd;
+    color: grey;
+}
+
+.mobile-navbar {
+    display: none;
+    position: fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0A1792), to(#0C30EF));
+    background: linear-gradient(180deg, #0A1792 0%, #0C30EF 100%);
+    right: 0;
+    top: 0;
+    width: 40rem;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+.mobile-navbar li {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.close-mobile-navbar {
+    cursor: pointer;
+    color: #fefefe;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.ion-md-close {
+    font-size: 4rem
+}
+
+.navbar-mobile-button.ion-md-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    color: #fefefe;
+    font-size: 2rem;
+    height: 5rem;
+    line-height: 5rem;
+    cursor: pointer;
+}
+
+nav li a {
+    display: inline-block;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+/* navigation bar ends here */
+
+#article-hero {
+    position: relative;
+    padding-top: 6rem;
+    height: 65vh;
+    background: center/cover url("../img/franck-v-YKW0JjP7rlU-unsplash.jpg");
+}
+
+.translucent-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 80%;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.article {
+    margin-top: 3em;
+}
+
+.article-date {
+    color: #242424;
+}
+
+.article-para {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-top: 2em;
+}
+
+.article-para h2 {
+    text-align: left;
+}
+
+.article-img {
+    max-width: 95%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+.hightlight-point {
+    border: 1px solid #d1d5da;
+    border-radius: 5px;
+    position: relative;
+/*     box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39); */
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.imp-hightlight-point {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+}
+
+.train-regis {
+    text-align: center;
+}
+
+footer {
+    background: #242424;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 3em;
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0.5em 0;
+}
+
+footer .tagline {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hearts {
+    color: red;
+}
+
+.footer-section-title {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-section-title:before{
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: white;
+    width: 60%;
+    height: 2px;
+}
+
+.adrr-contact>div {
+    margin-bottom: 2em;
+}
+
+.contact-info, .work-hours {
+/*     width: 70%; */
+}
+
+.work-hours p, .contact-info {
+    font-size: 1rem;
+}
+
+.contact-info a, .contact-info a:focus {
+    color: white;
+}
+
+.contact-info>div, .contact-info>p {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.contact-info .icon {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+
+.maps {
+    margin: 0 auto;
+}
+
+.maps iframe{
+    width: 100%;
+    height: 20rem;
+    border: 0;
+}
+
+.copyright {
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* maximum width 750px */
+@media (max-width: 750px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    .navbar-mobile-button.ion-md-menu {
+        display: block;
+    }
+}
+
+/* AOS animation */
+[data-aos="navbar-white"] {
+  background: transparent;
+  color: white;
+  position: absolute;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+}
+
+
+[data-aos="navbar-white"].aos-animate {
+    background: white;
+    position: fixed;
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+[data-aos="navbar-white"].aos-animate li {
+        color: black;
+}
+
+[data-aos="navbar-white"].aos-animate .navbar-logo {
+    background: center / contain no-repeat url('../img/kepler_logo.png');
+}
+
+@media (max-width: 750px) {
+    [data-aos="navbar-white"].aos-animate li {
+        color: white;
+    }
+
+    [data-aos="navbar-white"].aos-animate .ion-md-menu {
+        color: black;
+    }
+}
