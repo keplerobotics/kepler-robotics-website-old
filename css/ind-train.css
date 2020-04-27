@@ -251,10 +251,9 @@ nav li a {
 .imp-hightlight-point {
     background: linear-gradient(to right, #ff512f, #dd2476);
     color: white;
-    font-weight: bold;
 }
 
-.train-regis {
+.train-regis h2, .train-regis {
     text-align: center;
 }
 

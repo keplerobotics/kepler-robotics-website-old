@@ -29,6 +29,39 @@ body {
     margin-right: auto;
 }
 
+.hightlight-point {
+    border: 1px solid #d1d5da;
+    border-radius: 5px;
+    position: relative;
+/*     box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39); */
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.hightlight-point a {
+    text-decoration: none;
+    color: white;
+}
+
+.hightlight-point a::visited, .hightlight-point a::focus
+.hightlight-point a::active {
+    text-decoration: none;
+    color: white;
+}
+
+.imp-hightlight-point {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+}
+
+.new-banner {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    font-weight: bold;
+}
+
 /* navigation bar starts here */
 nav {
     position: absolute;
@@ -502,6 +535,13 @@ footer .tagline {
 .copyright {
     margin-top: 2em;
     text-align: center;
+}
+
+/* maximum width 900px */
+@media (max-width: 900px) {
+    .new-banner {
+        max-width: 95%;
+    }
 }
 
 /* maximum width 768px */
