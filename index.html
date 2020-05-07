@@ -200,6 +200,28 @@
         <p class="tagline">We'd <span class="hearts">&#10084;</span> to hear from you !</p>
         <section class="container">
             <div class="adrr-contact row d-flex justify-content-around">
+                <div class="col-12 col-lg-10">
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='#contact';}"></iframe>
+                    <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfJoHwjH4oCd3YfUvEqMS0eMAkZp_2ot1XkcovOm9WU2fsIXw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="form-element">
+                            <label for="name-inp">Name*</label>
+                            <input id="name-inp" name="entry.1592632854" type="text" placeholder="Name" value="" required />
+                        </div>
+                        <div class="form-element">
+                            <label for="email-inp">Email*</label>
+                            <input id="email-inp" name="entry.979358870" type="email" placeholder="Email" value="" required />
+                        </div>
+                        <div class="form-element">
+                            <label for="message-inp">Message*</label>
+                            <textarea id="message-inp" name="entry.779803476" placeholder="Tell us anything" value="" rows="15" required />
+                            </textarea>
+                            <input class="btn-pri" type="submit" value="Send" />
+                        </div>
+                    </form>
+                </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="footer-section-title">
                         Working Hours

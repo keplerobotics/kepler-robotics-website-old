@@ -290,6 +290,7 @@ h1 {
             transform: translateY(-10%);
     position: relative;
     box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
 }
 
 .btn-pri:focus, .btn-pri:active, .btn-pri:visited {
@@ -469,6 +470,53 @@ footer {
     padding-top: 1em;
     padding-bottom: 1em;
     margin-top: 3em;
+}
+
+.contact-form {
+    background: white;
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: 6px;
+}
+
+.contact-form .form-element {
+    margin: 0 auto;
+    margin-top: 1em;=
+}
+.contact-form label {
+    display: block;
+    color: black;
+    width: 100%;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input[type="text"], input[type="email"], .contact-form textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #d1d5da;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    resize: none;
+    font-size: 0.9rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, .contact-form textarea:focus {
+    border-color: #0C30EF;
+    position: relative;
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+input.btn-pri {
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0em 2.2em;
+    height: 2.2rem;
+    margin-top: 2em;
 }
 
 footer .tagline {
