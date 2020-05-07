@@ -475,13 +475,14 @@ footer {
 .contact-form {
     background: white;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 1.5em 1.5em 2em 1.5em;
     border-radius: 6px;
 }
 
 .contact-form .form-element {
     margin: 0 auto;
-    margin-top: 1em;=
+    margin-top: 1em;
+    position: relative;
 }
 .contact-form label {
     display: block;
@@ -517,6 +518,14 @@ input.btn-pri {
     padding: 0em 2.2em;
     height: 2.2rem;
     margin-top: 2em;
+}
+
+.form-element .success-text {
+    position: absolute;
+    bottom: -1.6rem;
+    left: 0;
+    margin: 0;
+    color: white;
 }
 
 footer .tagline {

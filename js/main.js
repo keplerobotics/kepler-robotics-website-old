@@ -37,3 +37,29 @@ var typed = new Typed('#typed', {
     loop: true,
     loopCount: Infinity
 });
+
+
+/**
+ * Contact form scripts
+ */
+var contactFormEls = document.querySelectorAll('.form-element .form-inp'),
+    sendBtn = document.querySelector('.form-element input[type="submit"'),
+    succesMsg = document.querySelector('.success-text');
+
+sendBtn.addEventListener('click', function() {
+    var formValid = 0;
+    for (var i = 0; i < contactFormEls.length; ++i) {
+        if (contactFormEls[i].checkValidity()) {
+            formValid += 1;
+        }
+    }
+
+    // show message has been sendBtn
+    console.log('validity: ', formValid);
+    if (formValid === 3) {
+        succesMsg.style.color = 'black';
+        setTimeout(function() {
+            succesMsg.style.color = 'white';
+        }, 1000);
+    }
+});

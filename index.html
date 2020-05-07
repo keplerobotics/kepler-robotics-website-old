@@ -208,17 +208,20 @@
                     <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfJoHwjH4oCd3YfUvEqMS0eMAkZp_2ot1XkcovOm9WU2fsIXw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="form-element">
                             <label for="name-inp">Name*</label>
-                            <input id="name-inp" name="entry.1592632854" type="text" placeholder="Name" value="" required />
+                            <input class="form-inp" id="name-inp" name="entry.1592632854" type="text" placeholder="Name" value="" required />
                         </div>
                         <div class="form-element">
                             <label for="email-inp">Email*</label>
-                            <input id="email-inp" name="entry.979358870" type="email" placeholder="Email" value="" required />
+                            <input class="form-inp" id="email-inp" name="entry.979358870" type="email" placeholder="Email" value="" required />
                         </div>
                         <div class="form-element">
                             <label for="message-inp">Message*</label>
-                            <textarea id="message-inp" name="entry.779803476" placeholder="Tell us anything" value="" rows="15" required />
-                            </textarea>
+                            <textarea class="form-inp" id="message-inp" name="entry.779803476" placeholder="Tell us anything"
+                            value="" rows="15" required ></textarea>
                             <input class="btn-pri" type="submit" value="Send" />
+                            <p class="success-text">
+                                Your message has been sent!
+                            </p>
                         </div>
                     </form>
                 </div>
