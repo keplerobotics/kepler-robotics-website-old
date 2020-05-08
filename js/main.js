@@ -55,7 +55,6 @@ sendBtn.addEventListener('click', function() {
     }
 
     // show message has been sendBtn
-    console.log('validity: ', formValid);
     if (formValid === 3) {
         succesMsg.style.color = 'black';
         setTimeout(function() {

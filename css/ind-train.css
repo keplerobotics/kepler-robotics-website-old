@@ -206,6 +206,11 @@ nav li a {
     max-width: 80%;
 }
 
+.title, .subtitle {
+    text-align: center;
+
+}
+
 .title {
     font-size: 3rem;
     margin-bottom: 0;
@@ -232,6 +237,9 @@ nav li a {
 }
 
 .article-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 95%;
     border-radius: 5px;
     position: relative;
@@ -297,6 +305,68 @@ footer .tagline {
     height: 2px;
 }
 
+.contact-form {
+    background: white;
+    margin: 0 auto;
+    padding: 1.5em 1.5em 2em 1.5em;
+    border-radius: 6px;
+}
+
+.contact-form .form-element {
+    margin: 0 auto;
+    margin-top: 1em;
+    position: relative;
+}
+
+.contact-form label {
+    display: block;
+    color: black;
+    width: 100%;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="email"],
+.contact-form textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #d1d5da;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    resize: none;
+    font-size: 0.9rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #0C30EF;
+    position: relative;
+    box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.39);
+}
+
+input.btn-pri {
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0em 2.2em;
+    height: 2.2rem;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.form-element .success-text {
+    position: absolute;
+    bottom: -1.6rem;
+    left: 0;
+    margin: 0;
+    color: white;
+}
+
 .adrr-contact>div {
     margin-bottom: 2em;
 }
@@ -351,6 +421,14 @@ footer .tagline {
 
     .navbar-mobile-button.ion-md-menu {
         display: block;
+    }
+
+    .hero-content {
+        max-width: 95%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
     }
 }
 
